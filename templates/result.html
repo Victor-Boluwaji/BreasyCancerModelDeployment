@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+    {% block main %}
+    <body class="center">
+
+        {% if results == 0 %}
+        <h1 style="color: rgb(88, 180, 88); font-weight:800">
+            <i class="fas fa-thumbs-up"></i> Disease is not present!
+        
+        {% elif results == 1 %}
+        <h1 style="color: rgb(41, 182, 182); font-weight:800">
+                <i class=" fas fa-band-aid"></i> Disease might be present!
+
+        {% else %}
+        <h1 style="color: rgb(11, 12, 11); font-weight:800">Error!</h1>
+        {% endif %}
+    </body>
+    {% endblock %}
